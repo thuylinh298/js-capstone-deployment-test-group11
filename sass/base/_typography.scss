@@ -1,0 +1,33 @@
+
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--color-gray-12);
+    font-size: $default-font-size;
+}
+
+.register {
+    &__form-header {
+        text-align: center;
+    }
+
+    &__logo {
+        height: 6rem;
+    }
+
+    &__heading {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 2.8rem 0 2rem;
+        font-size: 24px;
+    }
+
+    &__subheading {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+        color: var(--color-gray-7);
+    }
+}

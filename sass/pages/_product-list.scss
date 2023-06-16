@@ -1,0 +1,25 @@
+.section-product-list {
+    padding: 6rem 0;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    &__product-category {
+        margin-bottom: 0;
+    }
+
+    &__product-sort {
+        display: inline-block;
+        width: fit-content;
+        font-size: 1.6rem;
+
+        &:focus {
+            border-color: var(--color-gray-12);
+            box-shadow: 0 0 0 0.25rem var(--color-gray-12);
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.button {
+
+    & {
+        border: none;
+        cursor: pointer;
+    }
+
+    &,
+    &:link,
+    &:visited {
+        font-size: 1.4rem;
+        padding: 0.6rem 2rem;
+        display: inline-block;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    &--black {
+        background-color: var(--color-gray-12);
+        color: var(--color-gray-1);
+        border-radius: 50px;
+
+        &:hover {
+            color: var(--color-gray-1);
+        }
+
+        &:active {
+            background-color: var(--color-gray-8);
+        }
+    }
+
+    &--black-1 {
+        width: 50%;
+    }
+
+    &--outline {
+        border: 1px solid var(--color-gray-6);
+        color: var(--color-gray-12);
+        border-radius: 50px;
+
+        &:hover {
+            color: var(--color-gray-12);
+        }
+
+        &:active {
+            border: 1px solid var(--color-gray-12);
+        }
+    }
+
+    &--outline-1 {
+        width: 50%;
+    }
+
+    &--outline-rec {
+        border-radius: 3px;
+        width: 100%;
+        color: var(--color-gray-7);
+        height: 40px;
+        line-height: 27px;
+    }
+
+    &--black-rec {
+        border-radius: 3px;
+        width: 100%;
+        height: 40px;
+    }
+}
+
+.btn {
+    &-check:checked + .button--outline-rec {
+        color: var(--color-gray-12);
+        border-color: var(--color-gray-12);
+    }
+}
